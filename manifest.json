@@ -1,0 +1,22 @@
+{
+	"manifest_version": 3,
+	"name": "Localhost Scanner",
+	"version": "0.1.0",
+	"description": "Scan active localhost ports and open the corresponding site.",
+	"permissions": [
+		"storage"
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"host_permissions": [
+		"http://localhost/*"
+	],
+	"action": {
+		"default_title": "Find Active Localhost"
+	},
+	"options_ui": {
+		"page": "options.html",
+		"open_in_tab": true
+	}
+}

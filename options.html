@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Port Scan Settings</title>
+	<link rel="stylesheet" href="options.css">
+	<script src="check.js" defer></script>
+	<script src="options.js" defer></script>
+</head>
+
+<body>
+	<h1>Port Scan Settings</h1>
+	<p>Please enter the port numbers to scan (e.g., 3000-3005, 8000, 8080).</p>
+	<div>
+		<input type="text">
+		<button id="save">Save</button>
+	</div>
+	<p>Current settings: <span id="current"></span></p>
+	<p id="status"></p>
+	<ul>
+		<li>Right-clicking the extension icon will start scanning the ports.</li>
+		<li>If you wish to change the ports to be scanned, please left-click on the extension icon and click “Options”.
+		</li>
+
+	</ul>
+	<div>
+		<button type="button" id="feedback">Send Feedback</button>
+		<button type="button" id="about">About</button>
+	</div>
+</body>
+
+</html>
